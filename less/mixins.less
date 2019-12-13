@@ -1,1 +1,26 @@
 // Mixins Here
+
+.custom-button (@width; @padding){
+    background-color: @ebony-clay;
+    color: @porcelain;
+    border-radius: 8px;
+    width: @width;
+    padding: @padding;
+
+    &:hover{
+        background-color: @porcelain;
+        color: @ebony-clay;
+    }
+
+}
+
+.center (){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-limit (){
+    max-width: 800px;
+    width: 100%;
+}
