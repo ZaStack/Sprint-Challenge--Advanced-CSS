@@ -74,7 +74,7 @@
 
       @media @phone {
         width: 100%;
-        padding-top: 5%;
+        padding: 5% 0 0 0;
       }
 
       h3 {
@@ -88,6 +88,15 @@
       .btn {
         button{
           .custom-button(95px; 2% 3%;)
+        }
+
+        @media @phone {
+          button {
+            .custom-button (100%; 4% 30%;)
+
+
+            
+          }
         }
       }
     }
