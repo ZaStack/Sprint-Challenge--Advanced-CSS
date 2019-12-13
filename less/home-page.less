@@ -1,27 +1,23 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
 
     img {
       max-width: 100%;
     }
-  
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
     width: 100%;
 
@@ -32,12 +28,13 @@
       height: 100%;
     }
 
-    @media @phone{
-      .sky, .launch {
+    @media @phone {
+      .sky,
+      .launch {
         display: none;
       }
 
-      .blast{
+      .blast {
         width: 90%;
       }
     }
@@ -53,7 +50,6 @@
     p {
       margin-top: 13px;
     }
-
   }
 
   .walk {
@@ -63,7 +59,7 @@
     display: flex;
     justify-content: center;
 
-    @media @phone{
+    @media @phone {
       flex-direction: column-reverse;
       margin-top: 20px;
       padding: 25px 30px;
@@ -86,16 +82,25 @@
       }
 
       .btn {
-        button{
-          .custom-button(95px; 2% 3%;)
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: button 5s infinite;
+        width: 33%;
+        height: 48px;
+        border-radius: 8px;
+          @media @phone {
+            width: 100%;
+            height: 60px;
+          }
+
+        button {
+          .custom-button(95px; 2% 3%; 30px;);
         }
 
         @media @phone {
           button {
-            .custom-button (100%; 4% 30%;)
-
-
-            
+            .custom-button (95%; 4% 30%; 50px);
           }
         }
       }
@@ -109,7 +114,7 @@
         margin: 0;
         width: 100%;
       }
-      
+
       img {
         width: 100%;
         height: auto;
@@ -117,4 +122,4 @@
       }
     }
   }
-}// home
+} // home

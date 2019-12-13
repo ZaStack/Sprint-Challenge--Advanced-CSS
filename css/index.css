@@ -1,3 +1,20 @@
+@keyframes button {
+  0% {
+    background-color: #23293b;
+  }
+  25% {
+    background-color: #5e6164;
+  }
+  50% {
+    background-color: #81848e;
+  }
+  75% {
+    background-color: #5e6164;
+  }
+  100% {
+    background-color: #23293b;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,7 +152,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +160,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -165,9 +182,9 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #F6F6F6;
-  color: #454A59;
-  border-bottom: 1px solid #F1F1F1;
+  background-color: #f6f6f6;
+  color: #454a59;
+  border-bottom: 1px solid #f1f1f1;
 }
 .banner .banner-container {
   max-width: 800px;
@@ -227,7 +244,6 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
   width: 100%;
 }
@@ -284,28 +300,45 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: button 5s infinite;
+  width: 33%;
+  height: 48px;
+  border-radius: 8px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 60px;
+  }
+}
 .home .walk .walk-text .btn button {
-  background-color: #23293B;
-  color: #F6F7F8;
+  background-color: #23293b;
+  color: #f6f7f8;
   border-radius: 8px;
   width: 95px;
   padding: 2% 3%;
+  height: 30px;
 }
 .home .walk .walk-text .btn button:hover {
-  background-color: #F6F7F8;
-  color: #23293B;
+  background-color: #f6f7f8;
+  color: #23293b;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn button {
-    background-color: #23293B;
-    color: #F6F7F8;
+    background-color: #23293b;
+    color: #f6f7f8;
     border-radius: 8px;
-    width: 100%;
+    width: 95%;
     padding: 4% 30%;
+    height: 50px;
   }
   .home .walk .walk-text .btn button:hover {
-    background-color: #F6F7F8;
-    color: #23293B;
+    background-color: #f6f7f8;
+    color: #23293b;
   }
 }
 .home .walk .walk-img {
